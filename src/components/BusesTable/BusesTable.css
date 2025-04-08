@@ -1,0 +1,86 @@
+.buses-table-container {
+    margin-top: 20px;
+    overflow-x: auto;
+    background-color: var(--card-dark);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.loading-message,
+.no-data-message {
+    text-align: center;
+    padding: 30px;
+    font-size: 16px;
+    color: var(--text-secondary);
+    background-color: var(--card-dark);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.buses-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 0;
+}
+
+.buses-table th,
+.buses-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.buses-table th {
+    background-color: rgba(255, 255, 255, 0.05);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.buses-table tbody tr {
+    transition: background-color 0.2s;
+}
+
+.buses-table tbody tr:hover {
+    background-color: var(--card-hover);
+}
+
+.status-badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.status-badge.active {
+    background-color: var(--success-bg);
+    color: var(--success-text);
+}
+
+.status-badge.inactive {
+    background-color: var(--error-bg);
+    color: var(--error-text);
+}
+
+.view-details-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s;
+}
+
+.view-details-button:hover {
+    background-color: var(--primary-hover);
+}
