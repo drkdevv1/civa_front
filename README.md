@@ -1,54 +1,46 @@
-# React + TypeScript + Vite
+# Reto Tecnico Civa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Características
 
-Currently, two official plugins are available:
+- 🔐 Autenticación (login y registro de usuarios)
+- 🚌 Listado de buses con paginación
+- 🔍 Visualización detallada de buses
+- 🌙 Interfaz con tema oscuro
+- 📱 Diseño responsive
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologías Utilizadas
+- React
+- TypeScript
+- React Router
+- React Icons
+- CSS
+- Fetch API
 
-## Expanding the ESLint configuration
+## Requisitos Previos
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Node.js (versión 16.0 o superior)
+- npm (versión 8.0 o superior)
+- Backend ejecutándose en http://localhost:8080
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Instalación
+
+### 1. Clonar el repositorio
+
+```bash
+git clone https://github.com/drkdevv1/civa_front.git
+cd civa_front
+```
+## 2. Instalar dependencias
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Ejecución
+Primero ejecutar el backend
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm run dev
 ```
+La aplicación se ejecutará en http://localhost:5173
+
